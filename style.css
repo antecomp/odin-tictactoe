@@ -1,0 +1,51 @@
+body {
+    font-family: Comfortaa;
+    background-color: #03090e;
+    color: #174e7a;
+}
+
+.tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* can cheat this since its one character */
+    font-size: 12vw;
+    min-height: 12vw;
+    background: #03090e;
+}
+
+#boardcon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    max-height: 96vh;
+    aspect-ratio: 1/1;
+    gap: 3px;
+    background: #174e7a;
+}
+
+#status {
+    height: 6ch;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#newgame {
+    width: 97%;
+    padding: 1ch;
+    background-color: #0b2438;
+    color: mediumaquamarine;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#newgame:hover {
+    filter: brightness(1.5);
+}
